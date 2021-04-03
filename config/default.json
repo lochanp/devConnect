@@ -1,4 +1,6 @@
 {
   "mongoURL": "mongodb+srv://lochan:Ac8RVS6R2eXx6WWR@cluster0.li2k4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-  "jwtSecret": "mytoken"
+  "jwtSecret": "mytoken",
+  "githubClientId": "7b2a1e8614cdec9a897b",
+  "githubSecret": "0f12ae7add50ce62a85ee854452c4f31a1ae718e"
 }
