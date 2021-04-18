@@ -3,7 +3,7 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const gravatar = require('gravatar');
 const jwt = require('jsonwebtoken')
-const Users = require('../../models/User');
+const User   = require('../../models/User');
 const config = require('config');
 const {
     check,
@@ -34,7 +34,7 @@ router.post('/', [
 
     try {
         //check if the user exist
-        let user = await Users.findOne({
+        let user = await User.findOne({
             email
         });
         if (user) {
