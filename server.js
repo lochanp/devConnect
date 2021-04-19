@@ -13,9 +13,7 @@ const app = express();
 connectDB();
 
 //Initialize middleware
-app.use(express.json({
-    extended: false
-}));
+app.use(express.json());
 //Define Routes
 app.use('/api/users', userRoute)
 app.use('/api/posts', postRoute)
